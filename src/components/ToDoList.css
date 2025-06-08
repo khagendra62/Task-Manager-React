@@ -1,29 +1,39 @@
-Reset default styles
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif,
+    "Times New Roman", Times;
 }
 
 body {
-  background: linear-gradient(to right, #667eea, #764ba2);
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: start;
-  padding: 50px 20px;
 }
 
-.to-do-list {
+.light {
+  background-color: #f3f6f4;
+  color: #000000;
+}
+
+.dark {
+  background-color: #555555;
+  color: #ffffff;
+}
+
+.task-list-container {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 20px;
-  padding: 30px;
+  padding: 10px;
+  margin-bottom: 30px;
   width: 100%;
-  max-width: 500px;
+  min-width: 500px;
+  max-width: 700px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-  color: white;
+  margin-top: 100px;
 }
 
 h1 {
@@ -32,9 +42,9 @@ h1 {
   font-size: 2rem;
 }
 
-.input-container{
-	display: flex;
-	justify-content: center;
+.input-container {
+  display: flex;
+  justify-content: center;
 }
 
 input {
@@ -43,7 +53,7 @@ input {
   border-radius: 8px;
   border: 1px solid #ccc;
   outline: none;
-  font-size: 1rem; 
+  font-size: 1rem;
 }
 
 .add-btn {
@@ -94,7 +104,6 @@ button {
 
 .delete-btn {
   background-color: #ff4d4d;
-  color: white;
 }
 
 .delete-btn:hover {
@@ -104,7 +113,6 @@ button {
 .up-btn,
 .down-btn {
   background-color: transparent;
-  color: white;
   font-size: 18px;
 }
 
